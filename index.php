@@ -1,3 +1,23 @@
+<?php
+
+require "model/user.php";
+session_start();
+if(isset($_POST['username']) && isset($_POST['password'])){
+    $uname = $_POST['username'];
+    $upass= $_POST['password'];
+    $conn = new mysqli();
+    $korisnik = new User(null,$name,$upass);
+    $odg = $korisnik->loginUser(null,$uname, $upass);
+    $odg = User::loginUser($uname,$upass,$conn);
+    if($odg){
+        echo "Uspesno ste se prijavili";
+    }
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

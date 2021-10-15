@@ -62,9 +62,9 @@
                     </td>
 
                 </tr>
-                <?php
+                
             }
-            } ?>
+            } 
             </tbody>
         </table>
         <div class="row" >
@@ -77,12 +77,12 @@
                 <button id="btn-obrisi" class="btn btn-danger" style="background-color: red; border: 1px solid white;">Obrisi</button>
             </div>
 
-            <div class="col-md-2" style="text-align: right>; color:" >
+            <div class="col-md-2" style="text-align: right; color:black" >
                     <button id="btn-sortiraj" class="btn btn-normal" onclick="sortTable()">Sortiraj</button>
                 </div>
 
         </div>
-    </div>
+    </div>  
 </div>
 
 <!-- Modal -->
@@ -196,7 +196,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
+<script>
+console.log("Uspesno ste se prijavili");
 
+</script>
 
 </body>
 </html>
